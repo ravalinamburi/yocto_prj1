@@ -6,6 +6,7 @@ SRC_URI = "file://hello.c"
 S = "${WORKDIR}"
 
 do_compile() {
+    pwd
     ${CC} ${S}/hello.c ${LDFLAGS} -o hello
 }
 
