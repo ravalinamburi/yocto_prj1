@@ -1,0 +1,16 @@
+name: Simple Checker
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  simple-checker:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Run Simple Checker
+      run: ./simple-checker.sh
