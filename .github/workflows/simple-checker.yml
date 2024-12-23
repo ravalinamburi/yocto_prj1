@@ -13,4 +13,4 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Run Simple Checker
-      run: ./simple-checker.sh
+      run: ./checker_scripts/simple-checker.sh
