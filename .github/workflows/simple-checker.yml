@@ -12,5 +12,8 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Set execute permission
+      run: chmod +x ./checker_scripts/simple-checker.sh
+
     - name: Run Simple Checker
       run: ./checker_scripts/simple-checker.sh
