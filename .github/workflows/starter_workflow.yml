@@ -5,4 +5,4 @@ on:
 
 jobs:
   call-workflow-in-local-repo:
-    uses: ravalinamburi/yocto_prj1/.github/workflows/resuable_workflow.yml@main
+    uses: ./.github/workflows/resuable_workflow.yml
